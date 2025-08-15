@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🏥 Sistema de Gerstión hospitalaria MVC</title>
+
+    <meta
+      name="description"
+      content="Sistema integral de gesgtión hospitalaria con arquitectura MVC"
+    />
+    <meta name="theme-color" content="#3498db" />
+
+    <!-- <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico" /> -->
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Pantalla de Login -->
+    <div id="login-screen" class="login-screen active">
+      <!-- El contenido se renderiza dinámicamente -->
+    </div>
+
+    <script src="js/views/BaseView.js"></script>
+    <script src="js/views/LoginView.js"></script>
+    <script src="js/app.js"></script>
+
+    <script>
+      window.addEventListener("load", () => {
+        console.log("🌐 Página HTML cargo completamente");
+
+        setTimeout(() => {
+          initializeApp();
+        }, 200);
+      });
+    </script>
+  </body>
+</html>
